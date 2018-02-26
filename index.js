@@ -41,6 +41,7 @@ module.exports = function(Promise, TweenModule) {
     });
   };
 
+  util.killTweensOf = TweenModule.killTweensOf.bind(TweenModule);
   util.all = Promise.all;
   return util;
 };
